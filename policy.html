@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>CONTACT US | NISP MSIT</title>
+    <title>Policy | NISP MSIT</title>
+
+    <script>var about = "";</script>
+
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                 <a href="index.html" class="logo m-0">NISP MSIT<span class="text-primary">.</span></a>
                 <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-right">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="policy.html" target="_blank">Startup Policies</a></li>
+                    <li class="active"><a href="policy.html" target="_blank">Startup Policies</a></li>
                     <li class="has-children">
                         <a href="#">Collaboration</a>
                         <ul class="dropdown">
@@ -50,7 +53,7 @@
                     <li><a href="index.html#features">Facilities</a></li>
                     <li><a href="activities.html">Activities</a></li>
                     <li><a href="index.html#about">About</a></li>
-                    <li class="active"><a href="contact.html">IP Support</a></li>
+                    <li><a href="contact.html">IP Support</a></li>
                 </ul>
                 <a href="#"
                     class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
@@ -60,51 +63,16 @@
             </div>
         </div>
     </nav>
-
     <div class="untree_co-section bg-light py-5">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-7 pt-5 mt-5">
-                    <h1 class="text-black" data-aos="fade-up" data-aos-delay="100">Contact Us</h1>
+                    <h1 class="text-black" data-aos="fade-up" data-aos-delay="100">Policy will be updated very soon.
+                        Stay Tuned!</h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="untree_co-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label class="text-black" for="fname">First name</label>
-                                    <input type="text" class="form-control" id="fname">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label class="text-black" for="lname">Last name</label>
-                                    <input type="text" class="form-control" id="lname">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="text-black" for="email">Email address</label>
-                            <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label class="text-black" for="message">Message</label>
-                            <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div> <!-- /.col-lg-7 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div>
-    <!-- /.feature -->
-
     <div class="site-footer">
         <div class="container">
             <div class="row justify-content-center mb-5">
@@ -192,6 +160,61 @@
     <script src="js/aos.js"></script>
     <script src="js/custom.js"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-23581568-13');</script>
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+        var modal5 = document.getElementById("myModal5");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+        var span3 = document.getElementsByClassName("close")[2];
+        var span4 = document.getElementsByClassName("close")[3];
+        var span5 = document.getElementsByClassName("close")[4];
+
+        function btnClick(num) {
+            if (num == 1)
+                modal1.style.display = "block";
+            if (num == 2)
+                modal2.style.display = "block";
+            if (num == 3)
+                modal3.style.display = "block";
+            if (num == 4)
+                modal4.style.display = "block";
+            if (num == 5)
+                modal5.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
+        span5.onclick = function () {
+            modal5.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/inspire/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Nov 2020 08:02:29 GMT -->
