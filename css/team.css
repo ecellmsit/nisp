@@ -1,0 +1,56 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0099ff, #0044cc);
+    color: white;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: #0044cc;
+  }
+  
+  .team-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .team-card {
+    background: white;
+    color: #0044cc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .team-role {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background: #0044cc;
+    color: white;
+  }
+  

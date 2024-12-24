@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="team.css">
+    <title>Core Team</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .team-card {
+            background: white;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .team-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .team-card img {
+    width: 200px; /* Control display size */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+        .team-card h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .team-card p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .footer p {
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .department {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            border-color: #333;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .department h2 {
+            font-size: 1.5rem;
+            margin: 0 0 0.5rem;
+            color: #007bff;
+        }
+        .role {
+            margin: 0.5rem 0;
+            font-weight: bolder;
+        }
+        .role strong {
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+           
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .team-box, .mentor-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member, .mentor {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .mentor {
+            width: 220px;
+        }
+        .team-member h3, .mentor h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .team-member p, .mentor p {
+            color: #777;
+        }
+        .mentor img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-color: #333;
+            
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+                <ul class="js-clone-nav d-none d-lg-inline-block site-menu float-right"></ul>
+                    <button class="activee"><a href="index.html">Home</a></button>
+    <div class="section">
+        <h2  class="header">Our Mentors</h2>
+        <div class="mentor-box">
+            <div class="mentor">
+                <img src="images/Events/sat.jpg" alt="Mentor 1">
+                <h3>Dr Satinder Malik</h3>
+                <p>Department Advisor</p>
+            </div>
+            <div class="mentor">
+                <img src="images/Events/neer.jpg" alt="Mentor 2">
+                <h3>Dr Neeru Rathee</h3>
+                <p>Convener</p>
+            </div>
+            <div class="mentor">
+                <img src="images/Events/shail.jpg" alt="Mentor 3">
+                <h3>Dr Shaily Malik</h3>
+                <p>Department Advisor</p>
+            </div>
+            <div class="mentor">
+                <img src="images/Events/rakhi.jpg" alt="Mentor 4">
+                <h3>Dr Rakhi Kamra</h3>
+                <p>Department Advisor</p>
+            </div>
+            <div class="mentor">
+                <img src="images/Events/sud.jpg" alt="Mentor 5">
+                <h3>Dr Sudesh Pahal</h3>
+                <p>Department Advisor</p>
+            </div>
+            <div class="mentor">
+                <img src="images/Events/rak.jpg" alt="Mentor 6">
+                <h3>Dr Rakesh Chikara</h3>
+                <p>Department Advisor</p>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Meet Our Core Team</h1>
+        <p>The driving force behind our success</p>
+    </div>
+
+    <div class="team-container">
+        <div class="team-card ">
+            <img src="images/Events/shau.jpg" alt="Team Member" >
+            <h3>Shaurya Mishra</h3>
+            <p>President</p>
+        </div>
+        <div class="team-card">
+            <img src="images/Events/harshika.jpg" alt="Team Member">
+            <h3>Harshika Drall</h3>
+            <p>Vice President</p>
+        </div>
+        <div class="team-card">
+            <img src="images/Events/mis.jpg" alt="Team Member">
+            <h3>Mishti Sethi</h3>
+            <p>General Sectretary</p>
+        </div>
+        <div class="team-card">
+            <img src="images/Events/vanshaj.jpg" alt="Team Member">
+            <h3>Vanshaj</h3>
+            <p>General Sectretary</p>
+        </div>
+    </div>
+
+      
+    </div>
+    <div class="header">
+        <h1>Executive Heads and Deputy Heads</h1>
+    </div>
+
+    <div class="section">
+        <div class="department">
+            <h2>Event Management</h2>
+            <p class="role"><strong>Executive Head:</strong> Nandini Gangwar</p>
+            <p class="role"><strong>Deputy Heads:</strong> Rishit Rastogi, Vansh Kumar Sharma</p>
+        </div>
+        <div class="department">
+            <h2>Design and Videography</h2>
+            <p class="role"><strong>Executive Head:</strong> Shaurya Gupta</p>
+            <p class="role"><strong>Deputy Heads:</strong> Siddharth Pandit, Sahil Udar, Yashaswini</p>
+        </div>
+        <div class="department">
+            <h2>Content</h2>
+            <p class="role"><strong>Executive Head:</strong> Ayush Naik</p>
+            <p class="role"><strong>Deputy Heads:</strong> Harita Rishi, Akanksha Verma</p>
+        </div>
+        <div class="department">
+            <h2>PR and Outreach</h2>
+            <p class="role"><strong>Executive Head:</strong> Manisha Kumari</p>
+            <p class="role"><strong>Deputy Heads:</strong> Yatin Joshi, Riya</p>
+        </div>
+        <div class="department">
+            <h2>Sponsorship</h2>
+            <p class="role"><strong>Executive Head:</strong> Pranav Gulati</p>
+            <p class="role"><strong>Deputy Head:</strong> Sushil Kumar</p>
+        </div>
+        <div class="department">
+            <h2>Technical</h2>
+            <p class="role"><strong>Executive Head:</strong> Ishita Malhotra</p>
+            <p class="role"><strong>Deputy Head:</strong> Mayank Shukla</p>
+        </div>
+        <div class="department">
+            <h2>Publicity</h2>
+            <p class="role"><strong>Executive Head:</strong> Rishabh Nehra</p>
+            <p class="role"><strong>Deputy Heads:</strong> Prachi, Jasmine Saniya</p>
+        </div>
+        <div class="department">
+            <h2>Incubation</h2>
+            <p class="role"><strong>Vice Presidents:</strong> Manandeep Singh, Yash Bagga</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Together, we create magic.</p>
+    </div>
+
+</body>
+</html>
