@@ -18,17 +18,75 @@
     <title>MOU | NISP MSIT</title>
 </head>
 <style>
-
 .site-nav{
     background-image: url('images/bg_1.jpg');
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.py-20 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.mou-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #007bff;
 }
 
+.mou-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-left-color: #0056b3;
+}
 
+.mou-card a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mou-card a:hover {
+    color: #007bff;
+}
+
+.mou-icon {
+    color: #007bff;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.year-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px 0 30px 0;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.year-section h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.mou-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .mou-grid {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 <body>
     <!-- header start -->
@@ -46,7 +104,7 @@
         </div>
         <div class="site-mobile-menu-body"></div>
     </div>
-    <nav class="site-nav dark mb-5">
+    <nav class="site-nav dark mb-0">
         <div class="container">
             <div class="site-navigation">
                 <a href="index.html" class="logo m-0">NISP MSIT<span class="text-primary">.</span></a>
@@ -86,281 +144,138 @@
     <!-- header end -->
 
     <!-- MOU'S Start -->
-    <div class="untree_co-section bg-light py-5">
+    <div class="untree_co-section bg-light" style="padding-top: 80px; padding-bottom: 60px;">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-lg-7 pt-5 mt-5">
+                <div class="col-lg-7">
                     <h1 class="text-black" data-aos="fade-up" data-aos-delay="100">Memorandum Of Understanding</h1>
+                    <p class="text-muted mt-3">Our collaborative partnerships with leading institutions</p>
                 </div>
             </div>
         </div>
-        <h2 class="d-block text-center pt-3">2023-2024</h2>
-        <div class="container mt-5 h6 text-info">
-            <ol>
-                <div class="row"></div>
-                <li><a href="/mou_pdf/neww/SHIVAJI_2024 2.pdf" target="_blank">E-Cell | SHIVAJI 2024 2</a></li><br>
-                <li><a href="/mou_pdf/neww/SHIVAJI_2024.pdf" target="_blank">E-Cell | SHIVAJI 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/MAIMS_2024.pdf" target="_blank">E-Cell | MAIMS 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/ARYABHATTA_2024.pdf" target="_blank">E-Cell | ARYABHATTA 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/DTU_2024.pdf" target="_blank">E-Cell | DTU 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/GTBIT_2024.pdf" target="_blank">E-Cell | GTBIT 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/MSI_2024.pdf" target="_blank">E-Cell | MSI 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/RAMANUJAN_2024.pdf" target="_blank">E-Cell | RAMANUJAN 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/IIT DELHI_2024.pdf" target="_blank">E-Cell | IIT DELHI 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/MAIT_2024.pdf" target="_blank">E-Cell | MAIT 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/ACHARAYA NARENDRA DEV COLLEGE_2024.pdf" target="_blank">E-Cell | ACHARYA NARENDRA DEV COLLEGE 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/ATMA RAM SANTAN DHARAM_2024.pdf" target="_blank">E-Cell | ATMA RAM SANTAN DHARAM 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/DELHI_COLLEGE_OF_COMMERCE_AND_ARTS_2024.pdf" target="_blank">E-Cell | DELHI COLLEGE OF COMMERCE AND ARTS 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/JANKI_DEVI_MEMORIAL_COLLEGE_2024.pdf" target="_blank">E-Cell | JANKI DEVI MEMORIAL COLLEGE 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/KIRORIMAL_2024.pdf" target="_blank">E-Cell | KIRORIMAL 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/COLLEGE OF VOCATIONAL STUDIES_2024.pdf" target="_blank">E-Cell | COLLEGE OF VOCATIONAL STUDIES 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/VIPS_2024.pdf" target="_blank">E-Cell | VIPS 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/SRI AUROBINDO COLLEGE_2024.pdf" target="_blank">E-Cell | SRI AUROBINDO COLLEGE 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/MOTILAL NEHRU_2024.pdf" target="_blank">E-Cell | MOTILAL NEHRU 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/IGDTUW_2024.pdf" target="_blank">E-Cell | IGDTUW 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/USAR_2024.pdf" target="_blank">E-Cell | USAR 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/SRCASW_2024.pdf" target="_blank">E-Cell | SRCASW 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/ADGIPS_2024.pdf" target="_blank">E-Cell | ADGIPS 2024</a></li><br>
-                <li><a href="/mou_pdf/neww/MLNCE_2024.pdf" target="_blank">E-Cell | MLNCE 2024</a></li><br>
-                                
 
-                <li><a href="/mou_pdf/neww/SATYAWATI_2024.pdf" target="_blank">
-                  E-Cell |  Enactus 
-                  Satyawati College, DU
-              </a></li>
-              </br>
-                <li><a href="/mou_pdf/gtbit.pdf" target="_blank">
-                    E-Cell | GTBIT
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/galgotias.pdf" target="_blank">
-                    E-Cell | Galgotias University 
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/edc mait.pdf" target="_blank">
-                    EDC | MAIT
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/wwcngo.pdf" target="_blank">
-                    warriorswithoutcause 
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/bluechip.pdf" target="_blank">
-                    Blue Chip | Sri Venkateswara
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/finshark.pdf" target="_blank">
-                    Finshark | IINTM
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/spade.pdf" target="_blank">
-                    Spade | Shivaji College
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/advertere.pdf" target="_blank">
-                    Advertere | MSI
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/ramjas.pdf" target="_blank">
-                    E-Cell | Ramjas
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/rajdhani.pdf" target="_blank">
-                    Placement & Internship Cell | Rajdhani College
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/rotaract.pdf" target="_blank">
-                    Rotaract Club of Delhi Janak | Rotaract club 
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/iiitd.pdf" target="_blank">
-                    E-Cell, IIIT DELHI
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/comsoc-zakir.pdf" target="_blank">
-                    COMSOC | Zakir Hussain 
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/ecell-msi.pdf" target="_blank">
-                    E-Cell | MSI
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/comsoc-khalsa.pdf" target="_blank">
-                    Vanaj - COMSOC | Khalsa College, DU
-                </a></li>
-                </br>
-                <li><a href="./mou_pdf/urja.pdf" target="_blank">
-                    Urja | SGSCC, DU
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/satyawati.pdf" target="_blank">
-                    Placement Cell | Satyawati College, DU
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/monoliths.pdf" target="_blank">
-                    Monolithics | Motilal Nehru College, DU
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/e-cell jims.pdf" target="_blank">
-                    E-Cell | JIMS, Kalkaji
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/ay mou.pdf" target="_blank">
-                    AY Ventures | Communev Pvt. Ltd., Gurugram
-                </a></li>
-                </br>
-                <li><a href="/mou_pdf/nasscomm.pdf" target="_blank">
-                    NASSCOM Foundation | NASSCOM, Delhi
-                </a></li>
-                </br>
+        <!-- 2024-2025 Section -->
+        <div class="container">
+            <div class="year-section" data-aos="fade-up">
+                <h2 class="text-center">2024-2025</h2>
+            </div>
+            <div class="mou-grid">
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/1_NSUT.pdf" target="_blank"><span>📄 E-Cell | NSUT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/2_SRCASW.PDF" target="_blank"><span>📄 E-Cell | SRCASW</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/3_EnactusShivaji.pdf" target="_blank"><span>📄 Enactus | Shivaji College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/4_JankiDevi.pdf" target="_blank"><span>📄 E-Cell | Janki Devi Memorial College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/5_eCellShivaji.pdf" target="_blank"><span>📄 E-Cell | Shivaji College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/6_AtmaRamSanatanDharma.pdf" target="_blank"><span>📄 E-Cell | Atma Ram Sanatan Dharma College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/7_Aryabhatta.pdf" target="_blank"><span>📄 E-Cell | Aryabhatta College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/8_CVS.pdf" target="_blank"><span>📄 E-Cell | College of Vocational Studies</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/9_ADGIPS.pdf" target="_blank"><span>📄 E-Cell | ADGIPS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/10_KRMU.pdf" target="_blank"><span>📄 E-Cell | KRMU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/11_JIMS.pdf" target="_blank"><span>📄 E-Cell | JIMS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/12_Ramanujan.pdf" target="_blank"><span>📄 E-Cell | Ramanujan College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/13_StStephens.pdf" target="_blank"><span>📄 E-Cell | St. Stephens College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/14_GTBIT.pdf" target="_blank"><span>📄 E-Cell | GTBIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/15_GTBIT.pdf" target="_blank"><span>📄 E-Cell | GTBIT (2)</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/16_MAIMS.pdf" target="_blank"><span>📄 E-Cell | MAIMS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/17_VIVEKANANDA.pdf" target="_blank"><span>📄 E-Cell | Vivekananda College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/18_GalgotiasUniversity.pdf" target="_blank"><span>📄 E-Cell | Galgotias University</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/mous-2025/19_DelhiCollegeofArts&Commerce,DU.pdf" target="_blank"><span>📄 E-Cell | Delhi College of Arts & Commerce, DU</span><span>→</span></a></div>
+            </div>
+        </div>
 
-                <h2 class="d-block text-center pt-5">2022-2023</h2>
-                <div class="container text-center pt-5">
-                    <div class="row">
-                      <a href="'#" target="_blank" class="col flex-col px-3 ">
-                        <h4>E-Cell Aryabhatta</h4>
-                        <p>Aryabhatta College</p>
-                      </a>
-                      <a href="'#" target="_blank" class="col flex-col px-3">
-                        <h4>E-Cell MAIT</h4>
-                        <p>Maharaja Agrasain Institute of Technology</p>
-                      </a>
-                      <a href="'#" target="_blank" class="col flex-col px-3">
-                        <h4>Commerce Society</h4>
-                        <p>College of Vocational Studies</p>
-                      </a>
-                      <a href="'#" target="_blank" class="col flex-col px-3">
-                        <h4>EDC DDUC</h4>
-                        <p>Deen Dayal Upadyay College</p>
-                      </a>
-                    </div>
-                    <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>E-Society</h4>
-                          <p>Dyal Singh College, DU</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Enactus SAC</h4>
-                          <p>Sri Aurobindo College, DU</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Nivesh SAC</h4>
-                          <p>Sri Aurobindo College, DU</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Enactus AGDITM</h4>
-                          <p>Dr. Akhilesh Das Gupta Institute of Technology</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>IIC</h4>
-                          <p>Shaheed Rajguru College</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>TEB-ECELL CVS</h4>
-                          <p>College of Vocational Studies</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Commerce Society</h4>
-                          <p>Kirori Mal College</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Advertere</h4>
-                          <p>Maharaja Surajmal Institute</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>E-Cell</h4>
-                          <p>Galgotias University</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Rotaract Club</h4>
-                          <p>Delhi District 3011</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>CIE Cell</h4>
-                          <p>Lakshmibai College, DU</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>E-Cell</h4>
-                          <p>KITCoEK, Kolhapur</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>Illuminate - MAIMS</h4>
-                          <p>Maharaja Agrasain Institute of Management Studies</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>E-Cell IIITD</h4>
-                          <p>IIIT, Delhi</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>UPKRAM</h4>
-                          <p>Bharati College</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Thrust : E-Cell</h4>
-                          <p>Ramanujan College</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>FMA India</h4>
-                          <p>SSCBS</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Ecovision</h4>
-                          <p>SSCBS</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Mark Haven</h4>
-                          <p>SRCASW</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Vangati</h4>
-                          <p>DCAC</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>Raqam</h4>
-                          <p>Shaheed Rajguru College</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>E-Cell</h4>
-                          <p>NSUT</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>E-Cell</h4>
-                          <p>IIT, Kharagpu</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>CONSOC</h4>
-                          <p>College of Vocational Studies</p>
-                        </a>
-                      </div>
-                      <div class="row py-20">
-                        <a href="'#" target="_blank" class="col flex-col px-3 ">
-                          <h4>Equilibrium</h4>
-                          <p>SRCASW</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Commpact</h4>
-                          <p>Maharaja Agrasain Institute of Management Studies</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>Women Development Cell</h4>
-                          <p>Motilal Nehru College, DU</p>
-                        </a>
-                        <a href="'#" target="_blank" class="col flex-col px-3">
-                          <h4>E-Cell</h4>
-                          <p>Motilal Nehru College, DU</p>
-                        </a>
-                      </div>
-            </ol>
+        <!-- 2023-2024 Section -->
+        <div class="container">
+            <div class="year-section" data-aos="fade-up">
+                <h2 class="text-center">2023-2024</h2>
+            </div>
+            <div class="mou-grid">
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/SHIVAJI_2024 2.pdf" target="_blank"><span>📄 E-Cell | Shivaji College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/SHIVAJI_2024.pdf" target="_blank"><span>📄 E-Cell | Shivaji College (2)</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/MAIMS_2024.pdf" target="_blank"><span>📄 E-Cell | MAIMS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/ARYABHATTA_2024.pdf" target="_blank"><span>📄 E-Cell | Aryabhatta College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/DTU_2024.pdf" target="_blank"><span>📄 E-Cell | DTU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/GTBIT_2024.pdf" target="_blank"><span>📄 E-Cell | GTBIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/MSI_2024.pdf" target="_blank"><span>📄 E-Cell | MSI</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/RAMANUJAN_2024.pdf" target="_blank"><span>📄 E-Cell | Ramanujan College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/IIT DELHI_2024.pdf" target="_blank"><span>📄 E-Cell | IIT Delhi</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/MAIT_2024.pdf" target="_blank"><span>📄 E-Cell | MAIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/ACHARAYA NARENDRA DEV COLLEGE_2024.pdf" target="_blank"><span>📄 E-Cell | Acharya Narendra Dev College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/ATMA RAM SANTAN DHARAM_2024.pdf" target="_blank"><span>📄 E-Cell | Atma Ram Sanatan Dharma College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/DELHI COLLEGE OF COMMERCE AND ARTS_2024.pdf" target="_blank"><span>📄 E-Cell | Delhi College of Commerce and Arts</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/JANKI DEVI MEMORIAL COLLEGE_2024.pdf" target="_blank"><span>📄 E-Cell | Janki Devi Memorial College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/KIRORIMAL_2024.pdf" target="_blank"><span>📄 E-Cell | Kirori Mal College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/COLLEGE OF VOCATIONAL STUDIES_2024.pdf" target="_blank"><span>📄 E-Cell | College of Vocational Studies</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/VIPS_2024.pdf" target="_blank"><span>📄 E-Cell | VIPS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/SRI AUROBINDO COLLEGE_2024.pdf" target="_blank"><span>📄 E-Cell | Sri Aurobindo College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/MOTILAL NEHRU_2024.pdf" target="_blank"><span>📄 E-Cell | Motilal Nehru College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/IGDTUW_2024.pdf" target="_blank"><span>📄 E-Cell | IGDTUW</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/USAR_2024.pdf" target="_blank"><span>📄 E-Cell | USAR</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/SRCASW_2024.pdf" target="_blank"><span>📄 E-Cell | SRCASW</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/ADGIPS_2024.pdf" target="_blank"><span>📄 E-Cell | ADGIPS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/MLNCE_2024.pdf" target="_blank"><span>📄 E-Cell | MLNCE</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/neww/SATYAWATI_2024.pdf" target="_blank"><span>📄 Enactus | Satyawati College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/gtbit.pdf" target="_blank"><span>📄 E-Cell | GTBIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/galgotias.pdf" target="_blank"><span>📄 E-Cell | Galgotias University</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/edc mait.pdf" target="_blank"><span>📄 EDC | MAIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/wwcngo.pdf" target="_blank"><span>📄 Warriors Without Cause</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/bluechip.pdf" target="_blank"><span>📄 Blue Chip | Sri Venkateswara</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/finshark.pdf" target="_blank"><span>📄 Finshark | IINTM</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/spade.pdf" target="_blank"><span>📄 Spade | Shivaji College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/advertere.pdf" target="_blank"><span>📄 Advertere | MSI</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/ramjas.pdf" target="_blank"><span>📄 E-Cell | Ramjas College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/rajdhani.pdf" target="_blank"><span>📄 Placement & Internship Cell | Rajdhani College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/rotaract.pdf" target="_blank"><span>📄 Rotaract Club of Delhi Janak</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/iiitd.pdf" target="_blank"><span>📄 E-Cell | IIIT Delhi</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/comsoc-zakir.pdf" target="_blank"><span>📄 COMSOC | Zakir Hussain College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/ecell-msi.pdf" target="_blank"><span>📄 E-Cell | MSI</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/comsoc-khalsa.pdf" target="_blank"><span>📄 Vanaj - COMSOC | Khalsa College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="./mou_pdf/urja.pdf" target="_blank"><span>📄 Urja | SGSCC, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/satyawati.pdf" target="_blank"><span>📄 Placement Cell | Satyawati College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/monoliths.pdf" target="_blank"><span>📄 Monolithics | Motilal Nehru College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/e-cell jims.pdf" target="_blank"><span>📄 E-Cell | JIMS, Kalkaji</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/ay mou.pdf" target="_blank"><span>📄 AY Ventures | Communev Pvt. Ltd.</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="/mou_pdf/nasscomm.pdf" target="_blank"><span>📄 NASSCOM Foundation | NASSCOM, Delhi</span><span>→</span></a></div>
+            </div>
+        </div>
+
+        <!-- 2022-2023 Section -->
+        <div class="container">
+            <div class="year-section" data-aos="fade-up">
+                <h2 class="text-center">2022-2023</h2>
+            </div>
+            <div class="mou-grid">
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | Aryabhatta College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | MAIT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Commerce Society | College of Vocational Studies</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 EDC | Deen Dayal Upadyay College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Society | Dyal Singh College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Enactus | Sri Aurobindo College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Nivesh | Sri Aurobindo College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Enactus | ADGITM</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 IIC | Shaheed Rajguru College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 TEB-ECELL | College of Vocational Studies</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Commerce Society | Kirori Mal College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Advertere | Maharaja Surajmal Institute</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | Galgotias University</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Rotaract Club | Delhi District 3011</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 CIE Cell | Lakshmibai College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | KITCoEK, Kolhapur</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Illuminate | MAIMS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | IIIT Delhi</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 UPKRAM | Bharati College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Thrust E-Cell | Ramanujan College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 FMA India | SSCBS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Ecovision | SSCBS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Mark Haven | SRCASW</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Vangati | DCAC</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Raqam | Shaheed Rajguru College</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | NSUT</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | IIT Kharagpur</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 CONSOC | College of Vocational Studies</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Equilibrium | SRCASW</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Commpact | MAIMS</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 Women Development Cell | Motilal Nehru College, DU</span><span>→</span></a></div>
+                <div class="mou-card" data-aos="fade-up"><a href="#" target="_blank"><span>📄 E-Cell | Motilal Nehru College, DU</span><span>→</span></a></div>
+            </div>
         </div>
     </div>
     <!-- MOU'S End -->
