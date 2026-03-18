@@ -16,26 +16,34 @@
     <style>
         body {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f9fa;
             color: #333;
         }
 
         .header {
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: white;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e1e4e8;
+            border-top: 1px solid #e1e4e8;
+            color: #24292e;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
         }
 
         .header h1 {
-            margin: 0;
+            font-family: 'Georgia', serif;
             font-size: 2.5rem;
+            font-weight: normal;
+            margin: 0;
+            color: #1a202c;
         }
 
         .header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
+            font-size: 1.15rem;
+            color: #586069;
+            margin-top: 0.8rem;
         }
 
         .team-container {
@@ -47,42 +55,6 @@
             margin: 0 auto;
         }
 
-        .team-card {
-            background: white;
-            border: 2px solid #007bff;
-            border-radius: 10px;
-            text-align: center;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .team-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .team-card img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-        }
-
-        .team-card h3 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #007bff;
-        }
-
-        .team-card p {
-            margin: 0.5rem 0 0;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Mentor Section Styles - Fixed */
         .mentor-container {
             display: flex;
             flex-wrap: wrap;
@@ -93,44 +65,53 @@
             margin: 0 auto;
         }
 
-        .mentor-card {
-            background: white;
-            border: 2px solid #007bff;
-            border-radius: 10px;
+        .team-card, .mentor-card {
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-top: 4px solid #0366d6;
+            border-radius: 4px;
             text-align: center;
             padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .mentor-card {
             flex: 0 0 auto;
             width: 250px;
         }
 
-        .mentor-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        .team-card:hover, .mentor-card:hover {
+            transform: translateY(-2px);
+            border-color: #0366d6;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            background-color: #f6f8fa;
         }
 
-        .mentor-card img {
+        .team-card img, .mentor-card img {
             width: 200px;
             height: 200px;
-            border-radius: 10%;
+            border-radius: 4px;
             object-fit: cover;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            border: 1px solid #e1e4e8;
         }
 
-        .mentor-card h3 {
+        .team-card h3, .mentor-card h3 {
+            color: #0366d6;
+            font-size: 1.35rem;
+            font-weight: 600;
             margin: 0;
-            font-size: 1.5rem;
-            color: #007bff;
+            font-family: 'Arial', sans-serif;
         }
 
-        .mentor-card p {
+        .team-card p, .mentor-card p {
+            color: #444d56;
+            font-size: 1.05rem;
             margin: 0.5rem 0 0;
-            font-size: 1rem;
-            color: #555;
         }
 
         .section {
@@ -140,42 +121,55 @@
         }
 
         .department {
-            background: white;
-            border: 1px solid #333;
-            border-radius: 8px;
+            background: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-left: 4px solid #0366d6;
+            border-radius: 4px;
             padding: 2rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+
+        .department:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            background-color: #f6f8fa;
+            border-color: #0366d6;
         }
 
         .department h2 {
-            font-size: 1.5rem;
-            margin: 0 0 0.5rem;
-            color: #007bff;
+            font-size: 1.6rem;
+            margin: 0 0 1rem;
+            color: #24292e;
+            font-family: 'Georgia', serif;
+            font-weight: normal;
         }
 
         .role {
-            margin: 0.5rem 0;
-            font-weight: bolder;
+            margin: 0.6rem 0;
+            color: #444d56;
+            font-size: 1.1rem;
         }
 
         .role strong {
-            color: #0056b3;
+            color: #24292e;
+            font-weight: 600;
         }
 
         .footer {
-            background: #0056b3;
-            color: white;
+            background-color: #ffffff;
+            color: #586069;
+            border-top: 1px solid #e1e4e8;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            font-size: 1.1rem;
         }
 
         .footer p {
             margin: 0;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .mentor-container {
                 flex-wrap: wrap;
@@ -196,7 +190,7 @@
         <div class="site-mobile-menu-body"></div>
     </div>
 
-    <nav class="site-nav dark mb-5">
+    <nav class="site-nav dark mb-2">
         <div class="container">
             <div class="site-navigation">
                 <a href="index.html" class="logo m-0">NISP MSIT<span class="text-primary">.</span></a>
