@@ -19,14 +19,165 @@
 
     <script>var about = "";</script>
     <style>
-        img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
+        body {
+            background-color: #f7f9fa;
         }
 
-        .hidden-cards {
-            display: none;
+        /* Classic Hero Section */
+        .premium-hero {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e1e4e8;
+            padding: 20px 0 30px 0;
+            margin-top: -20px;
+            text-align: center;
+        }
+
+        .premium-hero h1 {
+            color: #24292e;
+            font-family: 'Georgia', serif;
+            font-size: 3.2rem;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .premium-hero p.subtitle {
+            font-size: 1.25rem;
+            color: #586069;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Classic Cards */
+        .card.premium-card {
+            border: 1px solid #e1e4e8 !important;
+            border-radius: 4px;
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* very subtle */
+            transition: all 0.2s ease;
+        }
+
+        .card.premium-card:hover {
+            border-color: #0366d6 !important;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+
+        .card.premium-card .carousel-inner {
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        .card.premium-card .card-title {
+            color: #24292e;
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card.premium-card .card-text {
+            color: #444d56;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .card.premium-card .btn-outline-primary {
+            border: 1px solid #0366d6;
+            border-radius: 3px;
+            font-weight: 500;
+            padding: 8px 18px;
+            color: #0366d6;
+            background-color: #fff;
+            text-transform: none;
+            font-size: 1rem;
+            transition: all 0.2s;
+        }
+
+        .card.premium-card .btn-outline-primary:hover {
+            background-color: #0366d6;
+            color: #fff;
+        }
+
+        /* Classic Modal Styling (Article Style) */
+        #dynamicModal {
+            background-color: rgba(0, 0, 0, 0.65) !important;
+            z-index: 1050;
+        }
+
+        #dynamicModal .modal-content {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 5vh auto;
+            padding: 40px 50px;
+        }
+
+        #dynamicModal .close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 2.2rem;
+            color: #333;
+            opacity: 0.5;
+            text-shadow: none;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        #dynamicModal .close:hover {
+            opacity: 1;
+        }
+
+        #dynamicModalTitle {
+            font-family: 'Georgia', serif;
+            color: #111;
+            font-size: 2.4rem;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        #dynamicModalDate {
+            color: #666;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            font-style: italic;
+        }
+
+        #dynamicModalContent {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #333;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        #loadMoreBtn {
+            background-color: #f6f8fa;
+            color: #24292e;
+            border: 1px solid #d1d5da;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(27,31,35,0.05);
+            font-weight: 600;
+            padding: 10px 24px;
+            transition: all 0.2s;
+        }
+        
+        #loadMoreBtn:hover {
+            background-color: #0366d6;
+            color: #ffffff;
+            border-color: #0366d6;
+        }
+
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 3px;
+            padding: 15px;
         }
     </style>
     <script>
@@ -94,335 +245,46 @@
             </div>
         </div>
     </nav>
-    <div id="myModal1" class="modal">
-
-        <!-- Modal content -->
+        <div id="dynamicModal" class="modal" style="display: none;">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-
-                The MSME Idea Hackathon 5.0 celebrated innovation and creativity, drawing participation from
-                enthusiastic student teams who showcased diverse ideas. The event began with motivating words from Smt.
-                Esha Jakhar and Professor Sandeep Maan, who emphasized innovation, adaptability, and perseverance in
-                entrepreneurship. Academic leaders including Dr. Archana Balyan, Dr. Neeru, and Dr. Rakhi highlighted
-                MSIT’s continued support toward nurturing an entrepreneurial mindset among students.The hackathon
-                featured engaging discussions and impressive project presentations, with Watt Saver AI standing out for
-                its smart energy optimization solution that earned funding support and commendation. The event concluded
-                with a Vote of Thanks by Dr. Neeru Ma’am and a group photograph symbolizing unity and innovation.
-                Overall, the hackathon strengthened the bridge between academia and industry, inspiring students to turn
-                their innovative ideas into impactful ventures.
-
-            </p>
-
-            <!-- <ul>
-                <li>Introduction :
-
-                    An enlightening event on MSME Entrepreneur awareness program and government schemes for
-                    entrepreneurs was successfully conducted on 28th November 2024 at seminar hall 206. The session
-                    aimed to promote the spirit of entrepreneurship and inform participants about various government
-                    schemes designed to support SC/ST and weaker section entrepreneurs.
-
-                </li>
-                <li> INTRODUCTORY SPEECH BY DIRECTOR OF MSIT
-                    :
-                    Dr. Archana Balyan, Director of MSIT, expressed her honor in inviting participants to the MSME
-                    Entrepreneurship workshop, designed specifically for SC/ST entrepreneurs. She highlighted the
-                    seminar's value in providing entrepreneurial insights and thanked the Ecell Society for its smooth
-                    execution. Dr. Balyan emphasized that the esteemed presence of experts would inspire participants
-                    and offer valuable guidance to enhance their entrepreneurial journey.
-
-                </li>
-                <li>
-                    ABOUT THE EVENT:
-                    In his introduction, Dr. Sunil Kumar Sharma highlighted the significance of economic growth
-                    ,fostering innovation , and addressed societal challenges
-                    He also gave some tips on how to start your own business and become an entrepreneur.
-                    He discussed the meaning of MSME and how it promotes micro and small scale entrepreneurs.
-                    Dr. Sunil Kumar Sharma concluded the speech and handed it over to Dr. Rajkumar Solanki.
-                    Dr. Rajkumar Solanki interacted with students and stakeholders to discuss the entrepreneurship
-                    opportunities and highlighted the importance of being job providers instead of being job seekers or
-                    hunters. He also informed us about the installation of an incubation chamber in our institute.
-
-                </li>
-                <li>
-                    Dr. Rajpal Solanki concluded the speech and passed the spotlight to
-                    Dr. S. S Solanki.
-                    In his introductory speech, he highlighted the importance of MSME and role of entrepreneurs in the
-                    development of a nation.
-                    An entrepreneur is an individual who creates ,organizes and manages a business or enterprise with
-                    the goal of earning profit. Entrepreneurs also promote regional development. He also talked about
-                    the constraints and conditions of an entrepreneur.
-                    At last Mr. Tufail Ahmed and Mr. Prakash Chand Meena gave brief information about various National
-                    SC/ST Scheme, Stand Up Scheme(for SC/ST and women entrepreneurs).
-
-                </li>
-
-            </ul>
-
-
-            <h4>Conclusion: </h4>
-            <p>
-                The event concluded with a heartfelt vote of thanks delivered by Dr. Neeru Rathee, who expressed her
-                sincere appreciation to the speakers, participants, and organizers for their valuable contributions in
-                making the event a success. The session proved to be both inspiring and informative, leaving attendees
-                with a deeper understanding of the opportunities available to them as aspiring entrepreneurs.
-            </p> -->
-        </div>
-
-
-    </div>
-    <div id="myModal2" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-
-                The TechForChange-Cohort 4 Ideathon began with an inspiring keynote by Ms. Richa Wahi, founder of
-                TalesDatSpin, who encouraged students to express their entrepreneurial journeys through powerful
-                storytelling. Her talk on clarity and impact in communication set an engaging tone for the day.
-                Following this, the CIENA NASSCOM Ideathon segment commenced, featuring 18 student teams presenting
-                technology-based solutions across fields such as legal tech, agriculture, and social welfare.Judges
-                Akhilesh Kumar Jha and Jaanhavi C. from the NASSCOM Foundation evaluated the teams, offering detailed
-                feedback on innovation, feasibility, and societal benefits. Saffgrow stood out with its impactful
-                agricultural automation idea, earning special appreciation from the panel. The top 10 teams were
-                recognized with ₹2000 Amazon vouchers for their outstanding efforts.The program concluded with a token
-                of gratitude to the guests and judges, celebrating the creativity and enthusiasm of all participants.
-                The event successfully bridged students’ academic skills with real-world entrepreneurial experiences,
-                showcasing eCell MSIT’s dedication to nurturing innovation and social impact through technology.
-
-            </p>
-        </div>
-
-
-    </div>
-    <div id="myModal3" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-
-                The E-Cell Orientation 2025 set an energetic tone from the outset with a warm welcome, interactive
-                sessions, and insightful addresses from Convener Dr. Neeru Rathee, President Nandini Gangwar, and the
-                core team. Day one featured exciting games like logo guessing and introductions that encouraged bonding
-                and participation among freshers.On the second day, various departments—EVM, PR & Outreach, Design,
-                Technical, Content, and Publicity—outlined their roles, followed by a fun “Guess the Song” challenge and
-                a lively jamming session by Vansh that lit up the hall. Day three brought even more energy with a
-                captivating dance performance, motivational stories, and vibrant participation from all attendees.The
-                final day concluded with creative games, audience engagement, and a standout rap performance by Ojas,
-                adding a memorable touch to the event. Goodies, books, and E-Cell merchandise rewarded active
-                participants, reflecting the organization’s enthusiasm and inclusivity. The program ended with a group
-                photograph, symbolizing togetherness and the start of an exciting journey with E-Cell MSIT.Overall, the
-                four-day orientation successfully instilled creativity, teamwork, and entrepreneurial passion among
-                freshers—perfectly capturing the essence of E-Cell’s mission to empower students as future
-                innovators and leaders.
-
-            </p>
-        </div>
-
-
-    </div>
-    <div id="myModal4" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>
-
-                The program began with a warm welcome, where the host introduced the dignitaries and
-                set an energetic tone for the session. Prof. Archana Balyan, Director of MSIT, inaugurated
-                the event and highlighted the importance of innovation, creativity, and educational
-                institutions’ role in shaping future entrepreneurs. She encouraged students to explore
-                business opportunities and contribute to the nation's economic growth.
-                Ms. Vishakha, Assistant Director (Gr. II), delivered a detailed overview of the MSME
-                schemes, elaborating on the objectives, benefits, and application process of government
-                grants. She discussed how aspiring entrepreneurs can access funding and support through
-                initiatives like UDYAM registration and other MSME benefit programs.
-                Following her, Shri Sunil Kumar, Assistant Director (Gr. I), shared valuable insights on how
-                to start and sustain a business. He discussed critical elements like business planning,
-                marketing, financial management, and technological innovation. His motivational quote, 'It
-                does not matter how many resources you have; if you don't know how to use them, you will
-                never succeed,' left a strong impression on the audience.
-                Ms. Madhu Malti, Deputy General Manager (Retd.), NSIC, inspired participants by presenting
-                practical business ideas, including ventures like bread making, spice packaging, and soy
-                milk production. She encouraged students to think creatively and use local resources
-                effectively to start profitable enterprises.
-                Shri R.K. Singh, Lead District Manager of the State Bank of India, explained the various
-                financial schemes offered to entrepreneurs, including Mudra loans up to ₹10 lakh, Stand-Up
-                India loans for SC/ST and women entrepreneurs, and other subsidy-based opportunities. He
-                stressed the importance of financial discipline and assured that banks play a supportive role
-                in the journey of entrepreneurship.
-                The event concluded with closing remarks by Prof. Neeru Rathee, who expressed gratitude
-                towards all speakers and participants. A short Q&A session followed, where students asked insightful
-                questions about credit scores and startup funding. The session ended with
-                refreshments and a sense of motivation among the attendees.<br>
-                Overall, the MSME Entrepreneurship Orientation Program served as a valuable platform for
-                young minds to understand the opportunities and challenges in starting their own ventures.
-                It encouraged students to think beyond traditional career paths and inspired them to take
-                the first step toward becoming successful entrepreneurs.
-
-
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-
-
-
-
-
-    <div class="untree_co-section bg-light py-5">
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-7 pt-5 mt-5">
-                    <h1 class="text-black" data-aos="fade-up" data-aos-delay="100">Activities Planned</h1>
+            <span class="close" onclick="closeDynamicModal()">&times;</span>
+            <div class="modal-body-content" style="padding: 0;">
+                <h2 id="dynamicModalTitle"></h2>
+                <span id="dynamicModalDate"></span>
+                <div id="dynamicModalImages" class="carousel slide" data-ride="carousel" style="border: 1px solid #e1e4e8; border-radius: 4px; padding: 8px; background: #fafbfc;">
+                    <div class="carousel-inner" id="dynamicModalCarouselInner" style="border-radius: 2px;"></div>
+                    <a class="carousel-control-prev" href="#dynamicModalImages" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#dynamicModalImages" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+                <p id="dynamicModalContent"></p>
             </div>
         </div>
     </div>
-    <div class="container-xxl pt-5">
+
+
+
+
+
+
+    <div class="premium-hero">
+        <div class="container text-center">
+            <h1 data-aos="fade-up" data-aos-delay="100">Our Activities</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Discover the dynamic events, hackathons, and workshops hosted by E-Cell MSIT to foster innovation, creativity, and an entrepreneurial mindset.</p>
+        </div>
+    </div>
+    <div class="container-xxl pt-3" style="min-height: 70vh; margin-top: 10px;">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
-                    <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
-                        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/Events/msmeideathon1.jpg" class="d-block w-100 card-img-top"
-                                        alt="First Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/Events/msmeideathon2.jpg" class="d-block w-100 card-img-top"
-                                        alt="Second Image">
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title"> MSME Idea Hackathon 5.0</h5>
-                            <p class="card-text">The MSME Idea Hackathon 5.0, organized by the Entrepreneurship Cell
-                                (eCell) of MSIT on 14th August 2025, provided a vibrant stage for innovative thinkers.
-                                Held under the Ministry of MSME, it aimed to inspire entrepreneurial ideas addressing
-                                real-world challenges.
-                                The event united students, faculty, and industry experts in a collaborative atmosphere.
-                                Its focus centered on sustainability, technology, and social innovation.
-                            </p>
-                            <p><a href="#" onclick="btnClick(1)">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
-                    <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
-                        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/Events/nasscom1.jpg" class="d-block w-100 card-img-top"
-                                        alt="First Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/Events/nasscom2.jpg" class="d-block w-100 card-img-top"
-                                        alt="Second Image">
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">TechForChange-Cohort 4 Ideathon</h5>
-                            <p class="card-text">The Entrepreneurship Cell (eCell) of MSIT, in collaboration with the
-                                NASSCOM Foundation, organized the TechForChange-Cohort 4 Ideathon on 22nd August 2025 at
-                                Seminar Hall 206.
-                                Under the guidance of Convener Neeru Rathee Ma’am, the event offered a platform for
-                                students to design innovative solutions to real-world challenges.
-                                It promoted creativity, leadership, and technology-driven social innovation among
-                                aspiring entrepreneurs.
-                                The Ideathon also strengthened industry-academia collaboration through expert mentorship
-                                and evaluation.
-
-                            </p>
-                            <p><a href="#" onclick="btnClick(2)">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
-                    <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
-                        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/Events/orientation1.jpg" class="d-block w-100 card-img-top"
-                                        alt="First Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/Events/orientation2.jpg" class="d-block w-100 card-img-top"
-                                        alt="Second Image">
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title">The E-Cell Orientation 2025</h5>
-                            <p class="card-text">The Entrepreneurship Cell (E-Cell) of MSIT organized its Four-Day
-                                Orientation Program from 25th to 28th August 2025 at Seminar Hall 206.
-                                Led by Convener Dr. Neeru Rathee Ma’am, the event welcomed the new batch with a blend of
-                                fun, learning, and interaction.
-                                Through engaging activities, creative performances, and team introductions, students
-                                were immersed in the vibrant culture of E-Cell.
-                                The program aimed to inspire leadership, collaboration, and an innovative
-                                entrepreneurial mindset.
-
-
-                            </p>
-                            <p><a href="#" onclick="btnClick(3)">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
-                    <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
-                        <div id="carouselExample2" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/Events/msmeorientation1.jpg" class="d-block w-100 card-img-top"
-                                        alt="First Image">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/Events/msmeorientation2.jpg" class="d-block w-100 card-img-top"
-                                        alt="Second Image">
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <div class="card-body text-center">
-                            <h5 class="card-title"> MSME Entrepreneurship Orientation Program</h5>
-                            <p class="card-text">The MSME Entrepreneurship Orientation Program was organized by eCell
-                                MSIT under the
-                                guidance of Prof. Neeru Rathee on 23rd September 2025 at Seminar Hall 206. The event
-                                aimed to encourage entrepreneurship among students and create awareness about various
-                                MSME schemes, government initiatives, and financial support systems available for
-                                budding
-                                entrepreneurs. With enthusiastic participation from students, faculty, and esteemed
-                                guests,
-                                the event provided deep insights into how the government promotes startups and supports
-                                small and medium enterprises in India.
-
-
-                            </p>
-                            <p><a href="#" onclick="btnClick(4)">Read more</a></p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row justify-content-center" id="events-container">
+                <!-- Events will be dynamically injected here -->
+            </div>
+            <div class="row justify-content-center mt-5 mb-5 text-center">
+                <button id="loadMoreBtn" onclick="loadMoreEvents()" style="display: none;">View Older Activities</button>
             </div>
         </div> <!-- /.container -->
     </div>
@@ -528,142 +390,156 @@
     <script src="js/custom.js"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-23581568-13');</script>
     <script>
-        // Get the modal
-        var modal1 = document.getElementById("myModal1");
-        var modal2 = document.getElementById("myModal2");
-        var modal3 = document.getElementById("myModal3");
-        var modal4 = document.getElementById("myModal4");
-        var modal5 = document.getElementById("myModal5");
-        var modal6 = document.getElementById("myModal6");
-        var modal7 = document.getElementById("myModal7");
-        var modal8 = document.getElementById("myModal8");
-        var modal9 = document.getElementById("myModal9");
-        var modal10 = document.getElementById("myModal10");
-        var modal11 = document.getElementById("myModal11");
-        var modal12 = document.getElementById("myModal12");
-        var modal13 = document.getElementById("myModal13");
-        var modal14 = document.getElementById("myModal14");
+        var dynamicModal = document.getElementById("dynamicModal");
+        var dynamicContent = document.getElementById("dynamicModalContent");
+        var dynamicTitle = document.getElementById("dynamicModalTitle");
+        var dynamicDate = document.getElementById("dynamicModalDate");
+        var dynamicCarouselInner = document.getElementById("dynamicModalCarouselInner");
+        
+        let allEvents = [];
+        let currentlyDisplayed = 0;
+        const EVENTS_PER_PAGE = 6;
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span1 = document.getElementsByClassName("close")[0];
-        var span2 = document.getElementsByClassName("close")[1];
-        var span3 = document.getElementsByClassName("close")[2];
-        var span4 = document.getElementsByClassName("close")[3];
-        var span5 = document.getElementsByClassName("close")[4];
-        var span6 = document.getElementsByClassName("close")[5];
-        var span7 = document.getElementsByClassName("close")[6];
-        var span8 = document.getElementsByClassName("close")[7];
-        var span9 = document.getElementsByClassName("close")[8];
-        var span10 = document.getElementsByClassName("close")[9];
-        var span11 = document.getElementsByClassName("close")[10];
-        var span12 = document.getElementsByClassName("close")[11];
-        var span13 = document.getElementsByClassName("close")[12];
-        var span14 = document.getElementsByClassName("close")[13];
-
-
-        function btnClick(num) {
-            if (num == 1)
-                modal1.style.display = "block";
-            if (num == 2)
-                modal2.style.display = "block";
-            if (num == 3)
-                modal3.style.display = "block";
-            if (num == 4)
-                modal4.style.display = "block";
-            if (num == 5)
-                modal5.style.display = "block";
-            if (num == 6)
-                modal6.style.display = "block";
-            if (num == 7)
-                modal7.style.display = "block";
-            if (num == 8)
-                modal8.style.display = "block";
-            if (num == 9)
-                modal9.style.display = "block";
-            if (num == 10)
-                modal10.style.display = "block";
-            if (num == 11)
-                modal11.style.display = "block";
-            if (num == 12)
-                modal12.style.display = "block";
-            if (num == 13)
-                modal13.style.display = "block";
-            if (num == 14)
-                modal14.style.display = "block";
+        function closeDynamicModal() {
+            dynamicModal.style.display = "none";
         }
 
-        // When the user clicks on <span> (x), close the modal
-        span1.onclick = function () {
-            modal1.style.display = "none";
-        }
-        span2.onclick = function () {
-            modal2.style.display = "none";
-        }
-        span3.onclick = function () {
-            modal3.style.display = "none";
-        }
-        span4.onclick = function () {
-            modal4.style.display = "none";
-        }
-        span5.onclick = function () {
-            modal5.style.display = "none";
-        }
-        span6.onclick = function () {
-            modal6.style.display = "none";
-        }
-        span7.onclick = function () {
-            modal7.style.display = "none";
-        }
-        span8.onclick = function () {
-            modal8.style.display = "none";
-        }
-        span9.onclick = function () {
-            modal9.style.display = "none";
-        }
-        span10.onclick = function () {
-            modal10.style.display = "none";
-        }
-        span11.onclick = function () {
-            modal11.style.display = "none";
-        }
-        span12.onclick = function () {
-            modal12.style.display = "none";
-        }
-        span13.onclick = function () {
-            modal13.style.display = "none";
-        }
-        span14.onclick = function () {
-            modal14.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == dynamicModal) {
+                dynamicModal.style.display = "none";
             }
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get all elements with the class "card"
-            var cards = document.querySelectorAll('.card');
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString(undefined, options);
+        }
 
-            // Define a function to set the border color based on the index
-            function setCardBorderColor(card, index) {
-                if (index < 4) {
-                    card.style.border = '2px solid #000'; // Black for the first four cards
+        function renderEvents(startIndex, count) {
+            const container = document.getElementById('events-container');
+            const end = Math.min(startIndex + count, allEvents.length);
+            
+            for (let index = startIndex; index < end; index++) {
+                const event = allEvents[index];
+                let carouselImages = '';
+                event.images.forEach((img, i) => {
+                    carouselImages += `
+                        <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                            <img src="${img}" class="d-block w-100 card-img-top" alt="${event.title} Image ${i + 1}" style="height: 220px; object-fit: cover;">
+                        </div>
+                    `;
+                });
+
+                let cardHTML = `
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 ">
+                        <div class="card premium-card h-100" data-aos="fade-up" data-aos-delay="100">
+                            <div id="carouselEvent${event.id}" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    ${carouselImages}
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column p-4 text-left">
+                                <h5 class="card-title">${event.title}</h5>
+                                <p class="text-muted small mb-3">Published on ${formatDate(event.date)}</p>
+                                <p class="card-text flex-grow-1">${event.shortDescription.substring(0, 130)}...</p>
+                                <div class="mt-4 text-center">
+                                    <a href="#" onclick="openEventModal(${event.id}); return false;" class="btn btn-outline-primary btn-block">Read full article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += cardHTML;
+                
+                window['eventData' + event.id] = event;
+            }
+            
+            currentlyDisplayed = end;
+            
+            const loadBtn = document.getElementById('loadMoreBtn');
+            if (loadBtn) {
+                if (currentlyDisplayed >= allEvents.length) {
+                    loadBtn.style.display = 'none';
                 } else {
-                    card.style.border = '1px solid #858585'; // #858585 for the rest of the cards
+                    loadBtn.style.display = 'inline-block';
                 }
             }
 
-            // Iterate through each card and set the border color
-            cards.forEach(function (card, index) {
-                setCardBorderColor(card, index);
-            });
+            // Re-initialize Bootstrap carousels auto-rotation
+            if (window.jQuery) {
+                $('.carousel').carousel();
+            }
+        }
+
+        function loadMoreEvents() {
+            renderEvents(currentlyDisplayed, EVENTS_PER_PAGE);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.getElementById('events-container');
+            container.innerHTML = '<div class="col-12 text-center py-5 my-5"><p class="text-muted" style="font-size: 1.2rem;">Loading activities...</p></div>';
+
+            fetch('data/events.json')
+                .then(response => {
+                    if (!response.ok) throw new Error("Network response was not ok");
+                    return response.json();
+                })
+                .then(events => {
+                    container.innerHTML = ''; // Clear loading text
+                    
+                    if (!events || events.length === 0) {
+                        container.innerHTML = `
+                            <div class="col-12 text-center py-5 my-5" style="border: 1px dashed #ccc; border-radius: 4px; padding: 40px; background: #fff;">
+                                <h3 style="font-family: Georgia, serif; color: #333;">No activities found</h3>
+                                <p style="color: #666; font-size: 1.1rem;">Check back later for updates</p>
+                            </div>
+                        `;
+                        return;
+                    }
+
+                    // Sort events by date descending (newest first)
+                    allEvents = events.sort((a, b) => new Date(b.date) - new Date(a.date));
+                    
+                    renderEvents(0, EVENTS_PER_PAGE);
+                })
+                .catch(error => {
+                    console.error('Error loading events:', error);
+                    container.innerHTML = '<div class="col-12 text-center py-5 my-5" style="border: 1px solid #d73a49; border-radius: 4px; padding: 20px; background: #ffeef0; color: #d73a49;"><h4>Error</h4><p>Failed to load activities. Please refresh the page.</p></div>';
+                });
         });
+        
+        function openEventModal(id) {
+            const event = window['eventData' + id];
+            if (event && dynamicContent) {
+                dynamicTitle.innerText = event.title;
+                dynamicDate.innerText = "Date: " + formatDate(event.date);
+                dynamicContent.innerHTML = event.detailedDescription;
+                
+                let carouselHTML = '';
+                event.images.forEach((img, i) => {
+                    carouselHTML += `
+                        <div class="carousel-item ${i === 0 ? 'active' : ''}">
+                            <img src="${img}" class="d-block w-100" style="max-height: 450px; object-fit: contain; background-color: #f1f1f1;" alt="${event.title} Image ${i + 1}">
+                        </div>
+                    `;
+                });
+                dynamicCarouselInner.innerHTML = carouselHTML;
+                
+                dynamicModal.style.display = "block";
+                
+                // Classic fade-in effect
+                dynamicModal.animate([
+                    { opacity: 0 },
+                    { opacity: 1 }
+                ], { duration: 200, fill: 'forwards' });
+                
+                // Re-initialize modal carousel
+                if (window.jQuery) {
+                    $('#dynamicModalImages').carousel();
+                }
+            }
+        }
     </script>
 </body>
 
